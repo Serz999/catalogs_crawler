@@ -10,6 +10,7 @@ import os
 import time
 import json
 from parser import get_catalog
+import argparse
 
 
 def main():
@@ -32,24 +33,14 @@ def main():
         service = Service(driver.install())
     options.add_argument("--headless")
 
-    browser = webdriver.Firefox(
-        service=service,
-        options=options
-    )
-
-    try:
+    with webdriver.Firefox(service=service, options=options) as browser:
         sites = targets["available"]
         for site in sites:
             print(f"-------------<{site['name']}>-------------\n")
             for link in site["links"]:
                 root_page = link["src"]
                 catalog_name = link["category"]
-                get_catalog(browser, site, root_page, catalog_name)
-    except Exception as ex:
-        print(ex)
-    finally:
-        browser.close()
-        browser.quit()
+                print(get_catalog(browser, site, root_page, catalog_name))
 
 
 if __name__ == "__main__":
