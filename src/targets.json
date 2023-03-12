@@ -1,0 +1,136 @@
+{
+    "available":[
+        {
+            "name":"Citilink",
+            "flag":"CL",
+            "domain": "https://www.citilink.ru",
+            "ids_mode": "text",
+            "links":[
+                {"category":"processors" , "src":"https://www.citilink.ru/catalog/processory/?view_type=list"},
+                {"category":"motherboards" , "src":"https://www.citilink.ru/catalog/materinskie-platy/?view_type=list"},
+                {"category":"video_cards" , "src":"https://www.citilink.ru/catalog/videokarty/?view_type=list"},
+                {"category":"rams" , "src":"https://www.citilink.ru/catalog/moduli-pamyati/?view_type=list"},
+                {"category":"cpu_coolers" , "src":"https://www.citilink.ru/catalog/sistemy-ohlazhdeniya-processora/?view_type=list"},
+                {"category":"power_units" , "src":"https://www.citilink.ru/catalog/bloki-pitaniya/?view_type=list"},
+                {"category":"computer_case" , "src":"https://www.citilink.ru/catalog/korpusa/?view_type=list"},
+                {"category":"hdd" , "src":"https://www.citilink.ru/catalog/zhestkie-diski/?view_type=list"},
+                {"category":"ssd" , "src":"https://www.citilink.ru/catalog/ssd-nakopiteli/?view_type=list"}
+            ],
+
+            "css_selectors" : {
+                "divs_select" : ".app-catalog-rjg8ao",
+                "data_products_ids" : ".e1n0yuko0",
+                "names" : ".app-catalog-9gnskf",
+                "prices" : ".e1j9birj0",
+                "links" : ".app-catalog-9gnskf[href]",
+                "page_num_links" : ".app-catalog-h5nagc"
+            },
+
+            "site_properties" : {
+                "data_product_id" : "data-product-id",
+                "getreq_attr" : "?p="
+            }
+        },
+        {
+            "name":"OnlineTrade",
+            "flag":"OT",
+            "domain": "https://www.onlinetrade.ru",
+            "ids_mode": "attr",
+            "links":[
+                {"category": "processors", "src":"https://www.onlinetrade.ru/catalogue/protsessory-c342/"},
+                {"category": "motherboards", "src": "https://www.onlinetrade.ru/catalogue/materinskie_platy-c340/"},
+                {"category":"video_cards", "src": "https://www.onlinetrade.ru/catalogue/videokarty-c338/"},
+                {"category":"rams", "src": "https://www.onlinetrade.ru/catalogue/operativnaya_pamyat-c341/"},
+                {"category":"cpu_coolers" , "src": "https://www.onlinetrade.ru/catalogue/kulery_dlya_protsessorov-c1492/"},
+                {"category":"power_units" , "src": "https://www.onlinetrade.ru/catalogue/bloki_pitaniya-c339/"},
+                {"category":"computer_case" , "src": "https://www.onlinetrade.ru/catalogue/kompyuternye_korpusa-c1323/"},
+                {"category":"hdd" , "src": "https://www.onlinetrade.ru/catalogue/zhestkie_diski_hdd-c174/"},
+                {"category":"ssd" , "src": "https://www.onlinetrade.ru/catalogue/ssd_diski-c294/"}
+            ],
+
+            "css_selectors":{
+                "divs_select" : ".indexGoods__item",
+                "data_products_ids" : ".indexGoods__item[id]",
+                "names" : ".indexGoods__item__name",
+                "prices" : ".price",
+                "links" : ".indexGoods__item__name[href]",
+                "page_num_links" : ".js__paginator__link"
+            },
+
+            "site_properties":{
+                "data_product_id" : "id",
+                "getreq_attr" : "?page="
+            }
+        },
+        {
+            "name":"XcomShop",
+            "flag":"XS",
+            "domain": "https://www.xcom-shop.ru",
+            "ids_mode": "attr",
+            "links":[
+                {"category":"processors" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/protsessory/"},
+                {"category":"motherboards" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/materinskie_platy/"},
+                {"category":"video_cards" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/videokarty/"},
+                {"category":"rams" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/modyli_pamyati/"},
+                {"category":"cpu_coolers" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/kylery_i_sistemy_ohlazhdeniya/"},
+                {"category":"power_units" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/bloki_pitaniya/"},
+                {"category":"computer_case" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/korpysa_desktop_i_aksessyary/"},
+                {"category":"hdd" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/hdd_zhestkie_diski/"},
+                {"category":"ssd" , "src":"https://www.xcom-shop.ru/catalog/kompyuternye_komplektyyuschie/ssd_tverdotelnye_nakopiteliflesh-diski/"}
+            ],
+
+            "css_selectors":{
+                "divs_select" : ".catalog_item",
+                "data_products_ids" : ".catalog_item[data-id]",
+                "names" : ".catalog_item__name",
+                "prices" : ".catalog_item__new_price",
+                "links" : ".catalog_item__name[href]",
+                "page_num_links" : "span a"
+            },
+
+            "site_properties":{
+                "data_product_id" : "data-id",
+                "getreq_attr" : "?list_page="
+            }
+        },
+        {
+            "name":"DNS",
+            "flag":"DNS",
+            "domain": "https://www.dns-shop.ru",
+            "ids_mode": "attr",
+            "links":[
+                {"category":"processors" , "src":"https://www.dns-shop.ru/catalog/17a899cd16404e77/processory/"},
+                {"category":"motherboards" , "src":"https://www.dns-shop.ru/catalog/17a89a0416404e77/materinskie-platy/"},
+                {"category":"video_cards" , "src":"https://www.dns-shop.ru/catalog/17a89aab16404e77/videokarty/"},
+                {"category":"rams" , "src":"https://www.dns-shop.ru/catalog/2d514a593baa7fd7/operativnaya-pamyat/"},
+                {"category":"cpu_coolers" , "src":"https://www.dns-shop.ru/catalog/17a9cc2d16404e77/kulery-dlya-processorov/"},
+                {"category":"power_units" , "src":"https://www.dns-shop.ru/catalog/17a89c2216404e77/bloki-pitaniya/"},
+                {"category":"computer_case" , "src":"https://www.dns-shop.ru/catalog/17a89c5616404e77/korpusa/"},
+                {"category":"hdd" , "src":"https://www.dns-shop.ru/catalog/17a8914916404e77/zhestkie-diski-35/"},
+                {"category":"hdd" , "src":"https://www.dns-shop.ru/catalog/f09d15560cdd4e77/zhestkie-diski-25/"},
+                {"category":"ssd" , "src":"https://www.dns-shop.ru/catalog/8a9ddfba20724e77/ssd-nakopiteli/"},
+                {"category":"ssd" , "src":"https://www.dns-shop.ru/catalog/dd58148920724e77/ssd-m2-nakopiteli/"} 
+            ],
+
+            "css_selectors": {
+                "divs_select" : ".catalog-product",
+                "data_products_ids" : ".catalog-product[data-code]",
+                "names" : ".catalog-product__name span",
+                "prices" : ".product-buy__price",
+                "links" : ".catalog-product__name[href]",
+                "page_num_links" : "a[class=\"pagination-widget__page-link\"]"
+            },
+
+            "site_properties": {
+                "data_product_id" : "data-code",
+                "getreq_attr" : "?p=" 
+            }
+        }
+    ],
+
+    "output":[
+        {
+
+        }
+    ]
+}
